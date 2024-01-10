@@ -1,10 +1,11 @@
-
+import Navbar from './Navbar'
 import { LayoutProps } from '../../interfaces/data'
 
-const Layout: React.FC<LayoutProps>  =({children}) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-    <div>{children}</div>
+      <Navbar />
+      <div>{children}</div>
     </>
   )
 }
