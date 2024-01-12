@@ -29,5 +29,5 @@ export interface RouterTypes {
 }
 
 export interface AddProduct {
-    (newProduct: InitialStateType): AxiosPromise<Product>
+    (addProduct: InitialStateType): AxiosPromise<Product>
 }
