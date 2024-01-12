@@ -27,7 +27,14 @@ export interface RouterTypes {
     Basket: string,
     ProductDetail: string
 }
+interface ProductParams {
+    price: number;
+    discountPrice: number;
+  }
 
 export interface AddProduct {
     (addProduct: InitialStateType): AxiosPromise<Product>
+}
+export interface GetProduct{
+    (params?: Required<ProductParams> | undefined): AxiosPromise<Product[]>;
 }
