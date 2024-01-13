@@ -3,7 +3,7 @@ import { Product } from "../interfaces/data"
 import { getProduct } from "../config/index"
 
 export const useFetchProducts = () => {
-    const [datas, setDatas] = useState<Product[]>()
+    const [datas, setDatas] = useState<Product[]>([])
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
