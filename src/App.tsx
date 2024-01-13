@@ -6,6 +6,7 @@ import Add from './components/action/Add'
 import Basket from './components/pages/Basket'
 import Product from "./components/pages/Product"
 import UpdateItem from './components/action/UpdateItem'
+import Detail from './components/pages/Details'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,6 +21,7 @@ function App(): JSX.Element {
         <Route path={ROUTER.Basket} element={<Basket />} />
         <Route path={ROUTER.Product} element={<Product />} />
         <Route path={ROUTER.UpdateItem + "/:id"} element={<UpdateItem />} />
+        <Route path={ROUTER.Detail + "/:id"} element={<Detail />} />
       </Routes>
       <ToastContainer />
     </>
