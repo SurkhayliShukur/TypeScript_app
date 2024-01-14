@@ -9,9 +9,6 @@ import { FaPen } from "react-icons/fa";
 import { FaRegTrashCan } from "react-icons/fa6"
 
 
-
-
-
 const Home: React.FC = () => {
   const navigate = useNavigate()
 
@@ -129,11 +126,11 @@ const Home: React.FC = () => {
                           <FaPen size={20} />
                         </button>
                         <button
-                        className="px-2 py-1 m-4 bg-red-700 rounded-sm mt-2 hover:opacity-75 transition-all duration-500"
-                        
-                      >
-                        <FaRegTrashCan size={20} />
-                      </button>
+                          className="px-2 py-1 m-4 bg-red-700 rounded-sm mt-2 hover:opacity-75 transition-all duration-500"
+
+                        >
+                          <FaRegTrashCan size={20} />
+                        </button>
                       </td>
                     </tr>
                   ))

@@ -38,3 +38,6 @@ export interface AddProduct {
 export interface GetProduct{
     (params?: Required<ProductParams> | undefined): AxiosPromise<Product[]>;
 }
+export interface DeleteProduct {
+    (productId:number): AxiosPromise<void>
+}
