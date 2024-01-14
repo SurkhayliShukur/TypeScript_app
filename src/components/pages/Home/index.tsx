@@ -7,6 +7,8 @@ import { ROUTER } from "../../../constant/Router"
 import { IoMdEye } from "react-icons/io";
 import { FaPen } from "react-icons/fa";
 import { FaRegTrashCan } from "react-icons/fa6"
+import {deleteProduct} from "../../../config/index"
+import {toast} from "react-toastify"
 
 
 const Home: React.FC = () => {
@@ -14,7 +16,18 @@ const Home: React.FC = () => {
 
   const { datas, loading, error, fetchProducts } = useFetchProducts()
 
-
+  const removeProduct = async(productId:number) => {
+    try{
+      const response = await deleteProduct(productId)
+      toast.success("Deleted successfully",{
+        autoClose:1000,
+      })
+      fetchProducts()
+    }
+    catch(error){
+        console.log(error)
+    }
+  }
 
   return (
     <>
@@ -127,7 +140,9 @@ const Home: React.FC = () => {
                         </button>
                         <button
                           className="px-2 py-1 m-4 bg-red-700 rounded-sm mt-2 hover:opacity-75 transition-all duration-500"
-
+                          onClick={() => {
+                            removeProduct(product.id)
+                          }}
                         >
                           <FaRegTrashCan size={20} />
                         </button>
