@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 
   const removeProduct = async(productId:number) => {
     try{
-      const response = await deleteProduct(productId)
+       await deleteProduct(productId)
       toast.success("Deleted successfully",{
         autoClose:1000,
       })

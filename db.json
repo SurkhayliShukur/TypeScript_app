@@ -1,17 +1,17 @@
 {
   "posts": [
     {
-      "id": "50a6",
-      "title": "ssss",
+      "id": "2223",
+      "title": "sssss",
       "description": "msmsmsmsmm",
       "price": 100,
-      "discountPrice": 111,
-      "rating": 89,
-      "stock": 11,
-      "category": "Shoes",
+      "discountPrice": 90,
+      "rating": 100,
+      "stock": 10,
+      "category": "0shoes",
       "image": "https://images.unsplash.com/photo-1682685796965-9814afcbff55?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "create_at": 1705080695223,
-      "color": "#000"
+      "create_at": 1705251619483,
+      "color": "#ec1818"
     }
   ]
 }
