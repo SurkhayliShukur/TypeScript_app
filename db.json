@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": "2223",
-      "title": "sssss",
+      "title": "ssssssddd1",
       "description": "msmsmsmsmm",
       "price": 100,
       "discountPrice": 90,
@@ -12,6 +12,19 @@
       "image": "https://images.unsplash.com/photo-1682685796965-9814afcbff55?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "create_at": 1705251619483,
       "color": "#ec1818"
+    },
+    {
+      "id": "9edd",
+      "title": "neww",
+      "description": "msmsmsmsmm",
+      "price": 100,
+      "discountPrice": 100,
+      "rating": 90,
+      "stock": 10,
+      "category": "Shoes",
+      "image": "https://images.unsplash.com/photo-1682685796965-9814afcbff55?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "create_at": 1705269446588,
+      "color": "#000"
     }
   ]
 }

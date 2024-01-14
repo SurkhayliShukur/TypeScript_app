@@ -71,7 +71,7 @@ const UpdateItem: React.FC = () => {
     <>
       <div className="py-6">
         <h1 className="text-center text-4xl text-cyan-300 mb-6">Update Product</h1>
-        <form className="flex justify-center">
+        <div className="flex justify-center">
           <div className="w-1/4 mx-24">
             <div className="relative z-0 w-full mb-5 group ">
               <input type="text"
@@ -196,7 +196,7 @@ const UpdateItem: React.FC = () => {
               }
             />
           </div>
-        </form>
+        </div>
       </div>
     </>
   )
