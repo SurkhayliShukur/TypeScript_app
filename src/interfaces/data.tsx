@@ -33,6 +33,18 @@ interface ProductParams {
     discountPrice: number;
 }
 
+export interface BasketType extends Omit<Product, "create_at">, PriceDetails {}
+
+export interface ProductState extends PriceDetails {
+    basket: BasketType[];
+  }
+interface PriceDetails {
+    amount: number;
+    totalAmount: number;
+    totalPrice: number;
+    totalDiscountPrice: number;
+  }
+
 export interface AddProduct {
     (addProduct: InitialStateType): AxiosPromise<Product>
 }
