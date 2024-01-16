@@ -4,7 +4,7 @@ import { ROUTER } from './constant/Router'
 import Home from './components/pages/Home'
 import Add from './components/action/Add'
 import Basket from './components/pages/Basket'
-import Product from "./components/pages/Product"
+import Product from "./components/pages/Products"
 import UpdateItem from './components/action/UpdateItem'
 import Detail from './components/pages/Details'
 import { ToastContainer } from 'react-toastify'
