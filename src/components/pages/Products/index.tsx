@@ -13,10 +13,6 @@ import { SlBasketLoaded } from "react-icons/sl";
 import { addToCard } from "../../../redux/slices/productSlice"
 
 
-
-
-
-
 const Products: React.FC = () => {
 
     const { datas, error, loading } = useFetchProducts()
