@@ -81,7 +81,20 @@ export const productSlice = createSlice({
         }
       }
     },
-    
+
+    removeFromCard: (state,action:PayloadAction<BasketType>) => {
+        const exist = state.basket.find((product) => product.id === action.payload.id)
+        if(exist){
+          state.basket = state.basket.filter((product) =>  product.id !== action.payload.id)
+          toast.success("Product deleted successfully!", {
+            autoClose: 1000,
+          });
+          state.totalAmount -= exist.amount;
+          state.totalPrice -= exist.totalPrice;
+          state.totalDiscountPrice -= exist.totalDiscountPrice;
+        }
+    },
+
     clearBasket: (state) => {
       state.basket = []
       state.amount = 0
@@ -98,5 +111,5 @@ export const getTotalAmount = (state: RootState) => state.products.totalAmount
 export const getTotalDiscount = (state: RootState) => state.products.totalDiscountPrice
 export const getTotalPrice = (state: RootState) => state.products.totalPrice
 
-export const { addToCard, increament, decrement } = productSlice.actions
+export const { addToCard, increament, decrement, clearBasket,removeFromCard } = productSlice.actions
 export default productSlice.reducer
