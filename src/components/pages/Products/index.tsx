@@ -95,6 +95,9 @@ const Products: React.FC = () => {
                                             </div>
                                             <button
                                                 className="px-6 py-1 bg-gray-700 rounded-md my-5 hover:opacity-70 transition-all duration-500"
+                                                onClick={() => {
+                                                    navigate(`${ROUTER.Detail}/${product.id}`)
+                                                }}
                                             >
                                                 <FaRegEye />
                                             </button>
