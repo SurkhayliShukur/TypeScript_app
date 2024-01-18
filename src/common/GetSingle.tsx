@@ -12,7 +12,6 @@ export const useFetchSingleProduct = (productId: number) => {
         try {
             const response = await getSingleProduct(productId)
             setProduct(response.data)
-
         }
         catch (error) {
             setError("error")
