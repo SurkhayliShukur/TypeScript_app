@@ -46,7 +46,7 @@ interface PriceDetails {
   }
 
 export interface AddProduct {
-    (addProduct: InitialStateType): AxiosPromise<Product>
+    (newProduct: InitialStateType): AxiosPromise<Product>
 }
 export interface GetProduct {
     (params?: Required<ProductParams> | undefined): AxiosPromise<Product[]>;
