@@ -32,6 +32,9 @@ interface ProductParams {
     price: number;
     discountPrice: number;
 }
+export interface ContextProps {
+    
+}
 
 export interface BasketType extends Omit<Product, "create_at">, PriceDetails {}
 
