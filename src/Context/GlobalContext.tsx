@@ -1,13 +1,14 @@
-import { FC, createContext, useContext } from "react";
+import { FC, createContext, useContext, useState } from "react";
 import { ContextProps, LayoutProps } from "../interfaces/data"
 
 
 const GlobalContext = createContext<ContextProps | undefined>(undefined)
 
 const GlobalContextProvider: FC<LayoutProps> = ({ children }) => {
+    const [isAdmin,setIsAdmin] = useState<boolean>(false)
 
     const value = {
-
+        isAdmin
     }
     const Component = GlobalContext.Provider
     return (

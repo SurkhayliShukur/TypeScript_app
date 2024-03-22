@@ -96,7 +96,7 @@ const Home: React.FC = () => {
                 }
                 {
                   datas && datas.length && datas.map((product, index) => (
-                    <tr key={product.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                       <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         {index + 1}
                       </td>
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
                       <td className="px-2 py-4 ">
                         <button className="text-cyan-700   hover:opacity-60 duration-500"
                           onClick={() => {
-                            navigate(`${ROUTER.Detail}/${product.id}`)
+                            navigate(`${ROUTER.Detail}/${product?.id}`)
                           }}
                         >
                           <IoMdEye size={45} />
@@ -133,7 +133,7 @@ const Home: React.FC = () => {
                       <td className="px-6 py-4 ">
                         <button className="text-cyan-700   hover:opacity-60 duration-500"
                           onClick={() => {
-                            navigate(`${ROUTER.UpdateItem}/${product.id}`)
+                            navigate(`${ROUTER.UpdateItem}/${product?.id}`)
                           }}
                         >
                           <FaPen size={20} />

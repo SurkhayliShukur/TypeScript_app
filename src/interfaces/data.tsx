@@ -33,6 +33,7 @@ interface ProductParams {
     discountPrice: number;
 }
 export interface ContextProps {
+    isAdmin: boolean
     
 }
 
