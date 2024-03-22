@@ -14,16 +14,16 @@
       "color": "#dd1b1b"
     },
     {
-      "id": "76a8",
-      "title": "newww",
-      "description": "msmsmsmsmm",
-      "price": 100,
-      "discountPrice": 100,
-      "rating": 100,
-      "stock": 98,
-      "category": "Shoes",
+      "id": "bca9",
+      "title": "iphone X",
+      "description": "neww",
+      "price": 2500,
+      "discountPrice": 10,
+      "rating": 200,
+      "stock": 6,
+      "category": "Phone",
       "image": "https://images.unsplash.com/photo-1682685796965-9814afcbff55?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "create_at": 1711007833237,
+      "create_at": 1711025046182,
       "color": "#000"
     }
   ]

@@ -66,6 +66,7 @@ const UpdateItem: React.FC = () => {
   if (error) {
     return <p className="m-20 text-red-300 text-xl ">Error: {error}</p>;
   }
+  console.log(product)
 
   return (
     <>

@@ -26,7 +26,7 @@ export const getSingleProduct: GetSingleProduct = (productId) => {
 //EDIT
 export const updateProduct: EditProduct = (productId, updatedProduct) => {
     return instanceAxios({
-        method: "PUT", url: ENDPOINT.POST_ID(productId), data: updatedProduct
+        method: "PUT", url: ENDPOINT.POST_ID(productId), data: updatedProduct,
     })
 }
 //DELETE
