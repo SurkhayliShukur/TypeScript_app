@@ -1,14 +1,20 @@
 import { FC, createContext, useContext, useState } from "react";
-import { ContextProps, LayoutProps } from "../interfaces/data"
+import { ContextProps, LayoutProps, Users } from "../interfaces/data"
 
 
 const GlobalContext = createContext<ContextProps | undefined>(undefined)
 
 const GlobalContextProvider: FC<LayoutProps> = ({ children }) => {
-    const [isAdmin,setIsAdmin] = useState<boolean>(false)
+    const [isAdmin, setIsAdmin] = useState<boolean>(false)
+    const [users, setUsers] = useState<Users[]>([])
+    const [showPassword, setShowPassword] = useState<boolean>(false)
+    const [confirmPassword, setConfirmPassword] = useState<string>("")
 
     const value = {
-        isAdmin
+        isAdmin,
+        users,
+        showPassword,
+        confirmPassword,
     }
     const Component = GlobalContext.Provider
     return (

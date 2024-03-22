@@ -34,20 +34,33 @@ interface ProductParams {
 }
 export interface ContextProps {
     isAdmin: boolean
-    
+    users: Users[]
+    showPassword: boolean
+    confirmPassword: string
+
 }
 
-export interface BasketType extends Omit<Product, "create_at">, PriceDetails {}
+export interface Users {
+    id?: number
+    name?: string
+    email: string
+    phone: string
+    password: string
+    image?: string
+    address?: string
+}
+
+export interface BasketType extends Omit<Product, "create_at">, PriceDetails { }
 
 export interface ProductState extends PriceDetails {
     basket: BasketType[];
-  }
+}
 interface PriceDetails {
     amount: number;
     totalAmount: number;
     totalPrice: number;
     totalDiscountPrice: number;
-  }
+}
 
 export interface AddProduct {
     (newProduct: InitialStateType): AxiosPromise<Product>
@@ -64,5 +77,5 @@ export interface EditProduct {
     ): AxiosPromise<Product>
 }
 export interface GetSingleProduct {
-    (productId:number):AxiosPromise<Product>
+    (productId: number): AxiosPromise<Product>
 }
