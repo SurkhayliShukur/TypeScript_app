@@ -34,18 +34,6 @@ interface ProductParams {
     price: number;
     discountPrice: number;
 }
-export interface ContextProps {
-    isAdmin: boolean
-    users: Users[]
-    showPassword: boolean
-    confirmPassword: string
-    setUsers: React.Dispatch<React.SetStateAction<Users[]>>
-    setConfirmPassword: (value:string) => void
-    setShowPassword: (value: boolean) => void
-  
-
-}
-
 export interface Users {
     id?: number
     name?: string
@@ -55,6 +43,20 @@ export interface Users {
     image?: string
     address?: string
 }
+export interface ContextProps {
+    isAdmin: boolean
+    users: Users[]
+    showPassword: boolean
+    confirmPassword: string
+    loggedInUser: Users[] | null
+    setUsers: React.Dispatch<React.SetStateAction<Users[]>>
+    setConfirmPassword: (value:string) => void
+    setShowPassword: (value: boolean) => void
+  
+
+}
+
+
 
 export interface BasketType extends Omit<Product, "create_at">, PriceDetails { }
 
