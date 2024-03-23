@@ -6,7 +6,7 @@ import React from 'react'
 const Login = () => {
 
   return (
-    <div>index</div>
+    <div>Login</div>
   )
 }
 

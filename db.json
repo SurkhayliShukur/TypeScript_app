@@ -28,6 +28,14 @@
     }
   ],
   "users": [
-    
+    {
+      "id": "2453",
+      "name": "Shukur",
+      "email": "g.pad97@mail.ru",
+      "phone": "0707341938",
+      "password": "admin00",
+      "image": "",
+      "address": ""
+    }
   ]
 }
