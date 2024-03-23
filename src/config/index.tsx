@@ -46,11 +46,15 @@ export const addUser = (newUser: Users) => {
     })
 }
 //GET uSER
-export const getUser = () => {
-    return instanceAxios({
-        method:"GET",
-        url: ENDPOINT.USERS
-    })
-
-}
+export const getUser = async () => {
+    try {
+      const response = await instanceAxios({
+        method: "GET",
+        url: ENDPOINT.USERS,
+      });
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  };
 

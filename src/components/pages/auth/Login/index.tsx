@@ -19,6 +19,7 @@ const Login = () => {
 
   const handleLogin = () => {
     const matchedUser = users.find((user) => user.email === email)
+ 
     if (isEmpty) {
       toast.warning("Please fill in all fields", {
         autoClose: 1000
@@ -69,6 +70,7 @@ const Login = () => {
 
 
   }
+  console.log(users)
 
 
   return (
@@ -83,7 +85,7 @@ const Login = () => {
           <div>
             <input
               name='mail'
-              placeholder='Name'
+              placeholder='Email'
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               className='bg-gray-600 mb-4 px-4 py-4 w-full lg:w-[20em] rounded-sm outline-none placeholder:text-gray-200 text-white'
@@ -140,7 +142,7 @@ const Login = () => {
           <div>
             <h2 className="text-white">
               <Link
-                className=" text-cyan-300 font-bold mt-3 text-xl py-1 hover:opacity-90 transition duration-300 "
+                className=" text-blue-500 font-bold mt-3 text-xl py-1 hover:opacity-90 transition duration-300 "
                 to={ROUTER.Register}
               >
                 Register

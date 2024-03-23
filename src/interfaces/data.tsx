@@ -39,8 +39,10 @@ export interface ContextProps {
     users: Users[]
     showPassword: boolean
     confirmPassword: string
+    setUsers: React.Dispatch<React.SetStateAction<Users[]>>
     setConfirmPassword: (value:string) => void
     setShowPassword: (value: boolean) => void
+  
 
 }
 
