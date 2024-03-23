@@ -15,6 +15,8 @@ const GlobalContextProvider: FC<LayoutProps> = ({ children }) => {
         users,
         showPassword,
         confirmPassword,
+        setShowPassword,
+        setConfirmPassword
     }
     const Component = GlobalContext.Provider
     return (

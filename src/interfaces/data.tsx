@@ -37,6 +37,8 @@ export interface ContextProps {
     users: Users[]
     showPassword: boolean
     confirmPassword: string
+    setConfirmPassword: (value:string) => void
+    setShowPassword: (value: boolean) => void
 
 }
 

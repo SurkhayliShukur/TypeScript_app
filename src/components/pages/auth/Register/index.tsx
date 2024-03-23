@@ -3,6 +3,7 @@ import { useGlobalContext } from "../../../../Context/GlobalContext"
 import { Users, ContextProps } from "../../../../interfaces/data"
 import { isValidEmail, isValidPhone, isValidPassword } from "../../../../constant/ValidRegex"
 import { useNavigate } from 'react-router-dom'
+import { toast } from "react-toastify"
 
 
 const initialStateUser: Users = {
@@ -13,10 +14,45 @@ const initialStateUser: Users = {
   image: "",
   address: ""
 }
-const Register:React.FC = () => {
-  const { showPassword, confirmPassword } = useGlobalContext() as ContextProps
+const Register: React.FC = () => {
+  const { showPassword, setShowPassword, confirmPassword, setConfirmPassword } = useGlobalContext() as ContextProps;
   const [newUser, setNewUser] = useState<Users>(initialStateUser)
   const navigate = useNavigate()
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    if (name === "confirmPassword") {
+      setConfirmPassword(value);
+    } else {
+      setNewUser((prevUser) => ({
+        ...prevUser,
+        [name]: value,
+      }));
+    }
+  };
+
+  const isEmpty: boolean = Object.values(newUser).some((vaule) => vaule === "")
+  const isPasswordMismatch: boolean = newUser.password !== confirmPassword;
+
+  const handleSubmit = async () => {
+    if (isEmpty) {
+      toast.error("Please fill in all fields",{
+        autoClose:1000
+      })
+    }
+    if (!isValidEmail(newUser.email)) {
+      toast.warning("Please enter your email",{
+        autoClose:1000
+      })
+    }
+    if(!isValidPhone(newUser.phone)){
+      toast.warning("Please enter your phone",{
+        autoClose:1000
+      })
+    }
+  }
+
+
 
   return (
     <>
