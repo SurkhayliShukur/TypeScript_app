@@ -99,7 +99,7 @@ const Register: React.FC = () => {
   return (
     <>
       <div className='flex justify-center items-center h-screen'>
-        <div className='bg-gray-50 px-10 py-10 '>
+        <div className='bg-gray-300 px-10 py-10  '>
           <div>
             <h1 className='text-center text-blue-500 mb-4 text-3xl font-bold'>
               Register
@@ -202,7 +202,7 @@ const Register: React.FC = () => {
           <div>
             <h2 className="text-white">
               <Link
-                className="text-cyan-300 font-bold ml-3 text-xl hover:opacity-90 transition duration-300"
+                className="text-blue-500 font-bold ml-3 text-xl hover:opacity-90 transition duration-300"
                 to={ROUTER.Login}
               >
                 Login
