@@ -27,6 +27,8 @@ export interface RouterTypes {
     Product: string,
     Basket: string,
     ProductDetail: string
+    Login: string
+    Register: string
 }
 interface ProductParams {
     price: number;

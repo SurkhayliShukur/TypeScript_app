@@ -7,6 +7,8 @@ import Basket from './components/pages/Basket'
 import Product from "./components/pages/Products"
 import UpdateItem from './components/action/UpdateItem'
 import Detail from './components/pages/Detail'
+import Login from './components/pages/auth/Login'
+import Register from './components/pages/auth/Register'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
@@ -21,7 +23,9 @@ function App(): JSX.Element {
         <Route path={ROUTER.Basket} element={<Basket />} />
         <Route path={ROUTER.Product} element={<Product />} />
         <Route path={ROUTER.UpdateItem + "/:id"} element={<UpdateItem />} />
-        <Route path={ROUTER.Detail + "/:id"} element={<Detail/>} />
+        <Route path={ROUTER.Detail + "/:id"} element={<Detail />} />
+        <Route path={ROUTER.Login} element={<Login />} />
+        <Route path={ROUTER.Register} element={<Register />} />
       </Routes>
       <ToastContainer />
     </>

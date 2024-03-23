@@ -1,6 +1,6 @@
 import { ENDPOINT } from "../constant/EndPoints";
 import { instanceAxios } from "../api/instanceApi";
-import { AddProduct, GetProduct, DeleteProduct, EditProduct, GetSingleProduct } from "../interfaces/data";
+import { AddProduct, GetProduct, DeleteProduct, EditProduct, GetSingleProduct, Users } from "../interfaces/data";
 
 //ADD 
 export const addProduct: AddProduct = (newProduct) => {
@@ -35,3 +35,14 @@ export const deleteProduct: DeleteProduct = (productId) => {
         method: "DELETE", url: ENDPOINT.POST_ID(productId)
     })
 }
+
+
+//ADD USER
+export const addUser = (newUser: Users) => {
+    return instanceAxios({
+        method: "POST",
+        url: ENDPOINT.USERS,
+        data: newUser
+    })
+}
+
