@@ -108,7 +108,7 @@ const Register: React.FC = () => {
           <div>
             <input
               type="text"
-              placeholder='name'
+              placeholder='Name'
               className='bg-gray-600 mb-4 px-4 py-4 w-full lg:w-[20em] rounded-sm outline-none placeholder:text-gray-200 text-white'
               name='name'
               value={newUser.name}
@@ -117,7 +117,7 @@ const Register: React.FC = () => {
           <div>
             <input
               type="email"
-              placeholder='email'
+              placeholder='Email'
               className='bg-gray-600 mb-4 px-4 py-4 w-full lg:w-[20em] rounded-sm outline-none placeholder:text-gray-200 text-white'
               name='email'
               value={newUser.email}
@@ -126,7 +126,7 @@ const Register: React.FC = () => {
           <div>
             <input
               type="text"
-              placeholder='phone'
+              placeholder='Phone'
               className='bg-gray-600 mb-4 px-4 py-4 w-full lg:w-[20em] rounded-sm outline-none placeholder:text-gray-200 text-white'
               name='phone'
               value={newUser.phone}
@@ -135,7 +135,7 @@ const Register: React.FC = () => {
           <div>
             <input
               type="text"
-              placeholder='address'
+              placeholder='Address'
               className='bg-gray-600 mb-4 px-4 py-4 w-full lg:w-[20em] rounded-sm outline-none placeholder:text-gray-200 text-white'
               name='address'
               value={newUser.address}
@@ -154,7 +154,7 @@ const Register: React.FC = () => {
           <div className='relative'>
             <input
               type={showPassword ? "text" : "password"}
-              placeholder='password'
+              placeholder='Password'
               className='bg-gray-600 mb-4 px-4 py-4 w-full lg:w-[20em] rounded-sm outline-none placeholder:text-gray-200 text-white'
               name='password'
               value={newUser.password}
@@ -174,7 +174,7 @@ const Register: React.FC = () => {
           <div className='relative'>
             <input
               type={showPassword ? "text" : "password"}
-              placeholder='confirmPassword'
+              placeholder='ConfirmPassword'
               className='bg-gray-600 mb-4 px-4 py-4 w-full lg:w-[20em] rounded-sm outline-none placeholder:text-gray-200 text-white'
               name='confirmPassword'
               value={confirmPassword}

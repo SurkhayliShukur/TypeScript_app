@@ -45,4 +45,12 @@ export const addUser = (newUser: Users) => {
         data: newUser
     })
 }
+//GET uSER
+export const getUser = () => {
+    return instanceAxios({
+        method:"GET",
+        url: ENDPOINT.USERS
+    })
+
+}
 
