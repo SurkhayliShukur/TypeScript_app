@@ -50,8 +50,13 @@ export interface ContextProps {
     users: Users[]
     showPassword: boolean
     confirmPassword: string
-    loggedInUser: Users[] | null
+    loggedInUser: Users | null
     setUsers: React.Dispatch<React.SetStateAction<Users[]>>;
+    showDelete: boolean
+    deleteUser: Users | null
+    closeModal: () => void
+    openDelModal: (userId:any) => void
+    setShowDelete: (value: boolean) => void
     setConfirmPassword: (value: string) => void
     setShowPassword: (value: boolean) => void
 
