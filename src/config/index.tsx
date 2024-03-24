@@ -66,6 +66,7 @@ export const updateUser = async (userId: number, updatedUserData: Partial<Users>
             url: `${ENDPOINT.USERS}/${userId}`,
             data: updatedUserData
         })
+        return response.data
     }
     catch (error) {
         throw error;

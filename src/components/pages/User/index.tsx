@@ -3,6 +3,7 @@ import { ContextProps } from "../../../interfaces/data"
 import { useNavigate } from "react-router-dom"
 import { FaRegTrashCan, FaPen } from "react-icons/fa6";
 import Layout from "../../layout/Layout"
+import { ROUTER } from "../../../constant/Router";
 
 const User = () => {
     const { loggedInUser } = useGlobalContext() as ContextProps
@@ -23,15 +24,18 @@ const User = () => {
                                     alt={loggedInUser.name} />
 
                                 <div className="bg-gray-950 rounded-b-lg py-4 ">
-                                    <h2>Name:{loggedInUser.name} </h2>
-                                    <p>Email:{loggedInUser.email} </p>
-                                    <address>Address:{loggedInUser.address}</address>
+                                    <h2>Name: {loggedInUser.name} </h2>
+                                    <p>Email: {loggedInUser.email} </p>
+                                    <address>Address: {loggedInUser.address}</address>
+                                    <div>
+                                        <button
+                                            onClick={() => navigate(`${ROUTER.UserEdit}/${loggedInUser.id}`)}
+                                            className="px-7 py-2 bg-blue-700 rounded-md hover:opacity-75 transition-all duration-700 m-5">
+                                            <FaPen />
+                                        </button>
+                                    </div>
                                 </div>
-                                <div>
-                                    <button className="px-7 py-2 bg-blue-700 rounded-md hover:opacity-75 transition-all duration-700">
-                                        <FaPen/>
-                                    </button>
-                                </div>
+
                             </div>
 
                         </>
