@@ -2,6 +2,7 @@ import { ENDPOINT } from "../constant/EndPoints";
 import { instanceAxios } from "../api/instanceApi";
 import { AddProduct, GetProduct, DeleteProduct, EditProduct, GetSingleProduct, Users } from "../interfaces/data";
 
+
 //ADD 
 export const addProduct: AddProduct = (newProduct) => {
     return instanceAxios({
@@ -72,6 +73,19 @@ export const updateUser = async (userId: number, updatedUserData: Partial<Users>
         throw error;
     }
 
+}
+//DELETE USER 
+export const deleteUser = async (userId:number) => {
+    try{
+        const response = await instanceAxios({
+            method:"DELETE",
+            url: `${ENDPOINT.USERS}/${userId}`
+        })
+        return response.data
+    }
+    catch (error) {
+        throw error;
+    }
 }
 
 
