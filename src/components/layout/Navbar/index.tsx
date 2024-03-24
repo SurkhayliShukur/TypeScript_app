@@ -94,30 +94,30 @@ const Navbar: React.FC = () => {
             </Link>
           </span>
           {loggedInUser && (
-          <>
-            <span className=" hover:text-blue-400 transition duration-500 text-3xl">
-              <Link to={ROUTER.Users}>
-                <div className="flex items-center text-stone-300 text-center text-lg">
-                  <img
-                    className="w-[45px] h-[45px] object-cover rounded-full mx-3"
-                    src={loggedInUser.image}
-                    alt={loggedInUser.name}
-                  />
-                  <p className="font-semibold">{loggedInUser.name}</p>
-                </div>
-              </Link>
-            </span>
+            <>
+              <span className=" hover:text-blue-400 transition duration-500 text-3xl">
+                <Link to={ROUTER.User}>
+                  <div className="flex items-center text-stone-300 text-center text-lg">
+                    <img
+                      className="w-[45px] h-[45px] object-cover rounded-full mx-3"
+                      src={loggedInUser.image}
+                      alt={loggedInUser.name}
+                    />
+                    <p className="font-semibold">{loggedInUser.name}</p>
+                  </div>
+                </Link>
+              </span>
 
-            <span className=" hover:text-blue-400 transition duration-500 text-2xl">
-              <button
-                onClick={handleLogout}
-                className="mx-4  text-sky-600 hover:text-gega-red   dark:text-sky-200   dark:hover:text-green-200 transition duration-500"
-              >
-                LogOut
-              </button>
-            </span>
-          </>
-        )}
+              <span className=" hover:text-blue-400 transition duration-500 text-2xl">
+                <button
+                  onClick={handleLogout}
+                  className="mx-4  text-sky-600 hover:text-gega-red   dark:text-sky-200   dark:hover:text-green-200 transition duration-500"
+                >
+                  LogOut
+                </button>
+              </span>
+            </>
+          )}
         </div>
 
       </div>

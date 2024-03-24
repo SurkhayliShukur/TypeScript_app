@@ -29,6 +29,7 @@ export interface RouterTypes {
     ProductDetail: string
     Login: string
     Register: string
+    User: string
 }
 interface ProductParams {
     price: number;

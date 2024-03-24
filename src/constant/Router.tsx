@@ -8,6 +8,7 @@ export const ROUTER:RouterTypes = {
     Product: "/product",
     Basket: "/basket",
     ProductDetail: "/productDetail",
+    User : "/user",
     Login: "/login",
     Register: "/register"
 }
