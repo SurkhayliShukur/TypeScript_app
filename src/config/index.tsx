@@ -45,16 +45,32 @@ export const addUser = (newUser: Users) => {
         data: newUser
     })
 }
-//GET uSER
+//GET USER
 export const getUser = async () => {
     try {
-      const response = await instanceAxios({
-        method: "GET",
-        url: ENDPOINT.USERS,
-      });
-      return response.data;
+        const response = await instanceAxios({
+            method: "GET",
+            url: ENDPOINT.USERS,
+        });
+        return response.data;
     } catch (error) {
-      throw error;
+        throw error;
     }
-  };
+};
+
+//EDIT USER
+export const updateUser = async (userId: number, updatedUserData: Partial<Users>) => {
+    try {
+        const response = await instanceAxios({
+            method: "PUT",
+            url: `${ENDPOINT.USERS}/${userId}`,
+            data: updatedUserData
+        })
+    }
+    catch (error) {
+        throw error;
+    }
+
+}
+
 

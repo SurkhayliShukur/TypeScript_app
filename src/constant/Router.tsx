@@ -10,5 +10,6 @@ export const ROUTER:RouterTypes = {
     ProductDetail: "/productDetail",
     User : "/user",
     Login: "/login",
-    Register: "/register"
+    Register: "/register",
+    UserEdit: "/userEdit"
 }

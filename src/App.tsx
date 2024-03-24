@@ -10,6 +10,7 @@ import Detail from './components/pages/Detail'
 import Login from './components/pages/auth/Login'
 import Register from './components/pages/auth/Register'
 import User from './components/pages/User'
+import UserEdit from './components/action/UserEdit'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
@@ -28,6 +29,7 @@ function App(): JSX.Element {
         <Route path={ROUTER.Login} element={<Login />} />
         <Route path={ROUTER.User} element={<User />} />
         <Route path={ROUTER.Register} element={<Register />} />
+        <Route path={ROUTER.UserEdit + "/:id"} element={<UserEdit />} />
       </Routes>
       <ToastContainer />
     </>

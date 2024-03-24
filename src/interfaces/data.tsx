@@ -30,6 +30,7 @@ export interface RouterTypes {
     Login: string
     Register: string
     User: string
+    UserEdit: string
 }
 interface ProductParams {
     price: number;
