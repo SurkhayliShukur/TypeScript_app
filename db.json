@@ -29,33 +29,6 @@
   ],
   "users": [
     {
-      "name": "Shukur",
-      "email": "g.pad97@mail.ru",
-      "phone": "0707341938",
-      "password": "admin555",
-      "image": "https://img.freepik.com/free-vector/call-center-assistant-helping-customers_23-2148192099.jpg?t=st=1711185131~exp=1711188731~hmac=d15b6fd4b96ab5b61c5487d8832101d905bea22c31d91a799392a7a200ab7cf8&w=740",
-      "address": "Azerbaijan, Sumgait",
-      "id": "2453"
-    },
-    {
-      "id": "0b47",
-      "name": "Admin",
-      "email": "g.pad97@mail.ru",
-      "phone": "0707341938",
-      "password": "admin1235",
-      "image": "https://img.freepik.com/free-vector/call-center-assistant-helping-customers_23-2148192099.jpg?t=st=1711185131~exp=1711188731~hmac=d15b6fd4b96ab5b61c5487d8832101d905bea22c31d91a799392a7a200ab7cf8&w=740",
-      "address": "Sumgait"
-    },
-    {
-      "name": "Shukur",
-      "email": "g.pad97@mail.ru",
-      "phone": "0707341938",
-      "password": "admin123",
-      "image": "",
-      "address": "Azerbaijan, Sumgait",
-      "id": "6088"
-    },
-    {
       "id": "7fac",
       "name": "Shukur",
       "email": "Admin@gmail.com",

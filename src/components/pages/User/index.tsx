@@ -4,9 +4,10 @@ import { useNavigate } from "react-router-dom"
 import { FaRegTrashCan, FaPen } from "react-icons/fa6";
 import Layout from "../../layout/Layout"
 import { ROUTER } from "../../../constant/Router";
+import DeleteUser from "../../action/DeleteUser";
 
 const User = () => {
-    const { loggedInUser } = useGlobalContext() as ContextProps
+    const { loggedInUser, openDelModal } = useGlobalContext() as ContextProps
     const navigate = useNavigate()
     return (
         <Layout>
@@ -33,6 +34,12 @@ const User = () => {
                                             className="px-7 py-2 bg-blue-700 rounded-md hover:opacity-75 transition-all duration-700 m-5">
                                             <FaPen />
                                         </button>
+                                        <button
+                                            className="px-7 py-2 ml-2 bg-red-700 rounded-md hover:opacity-75 transition-all duration-700 "
+                                            onClick={() => openDelModal(loggedInUser)}
+                                        >
+                                            <FaRegTrashCan size={20} />
+                                        </button>
                                     </div>
                                 </div>
 
@@ -42,6 +49,7 @@ const User = () => {
                     )
                 }
             </div>
+            <DeleteUser/>
         </Layout>
     )
 }

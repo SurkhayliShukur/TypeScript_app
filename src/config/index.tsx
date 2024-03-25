@@ -75,7 +75,7 @@ export const updateUser = async (userId: number, updatedUserData: Partial<Users>
 
 }
 //DELETE USER 
-export const deleteUser = async (userId:number) => {
+export const deletedUser = async (userId:number) => {
     try{
         const response = await instanceAxios({
             method:"DELETE",
